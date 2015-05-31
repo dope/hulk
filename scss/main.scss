@@ -1,0 +1,34 @@
+/**
+*
+* Main Scss File
+*
+**/
+
+// Base
+@import 'base/variables';
+
+// Excuse me, gotta drop the mixins here
+@import 'mixins/buttons';
+@import 'mixins/placeholder';
+@import 'mixins/media-queries';
+@import 'mixins/clearfix';
+@import 'mixins/box-sizing';
+
+// Continue with base
+@import 'base/normalize';
+@import 'base/global';
+@import 'base/typography';
+@import 'base/forms';
+
+// Components
+@import 'components/header';
+@import 'components/menu';
+@import 'components/container';
+@import 'components/blog-snippet';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/grid';
+@import 'components/pagination';
+
+// Utils
+@import 'utils/helpers';

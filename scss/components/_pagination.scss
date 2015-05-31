@@ -1,0 +1,18 @@
+.pagination {
+  a {
+    background: $color-white;
+    color: $base-color;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid darken($color-bg, 10%);
+    border-radius: 100px;
+    text-decoration: none;
+    transition: .3s;
+    float: left;
+    margin-right: 10px;
+
+    &:hover {
+      color: $color-accent;
+      border-color: $color-accent;
+    }
+  }
+}

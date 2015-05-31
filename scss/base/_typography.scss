@@ -1,0 +1,102 @@
+// Create loop for headings
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+
+// Set Styles
+#{headings(1,6)} {
+  font-family: $font-family;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  margin-bottom: 0;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: $h5-font-size;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: $h6-font-size;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 $base-spacing-unit;;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  a {
+    color: $base-color;
+    text-decoration: none;
+    border-bottom: 1px solid darken($color-white, 15%);
+
+    &:hover {
+      color: $color-accent;
+      border-color: $color-accent;
+    }
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+code,
+pre {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 1px solid darken($color-black, 10%);
+  padding-left: $base-spacing-unit;
+
+  &:before {
+     content: "\201C";
+     display: inline-block;
+     padding-right: 0.4em;
+  }
+}

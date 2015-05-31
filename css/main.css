@@ -1,0 +1,625 @@
+/**
+*
+* Main Scss File
+*
+**/
+/**
+*
+* Global Configuration for Hulk
+*
+**/
+.btn {
+  background: #1BBC9B;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #FFF;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 0.3rem 1.5rem;
+  letter-spacing: 2px;
+  line-height: 2.4;
+  display: table;
+  transition: background .3s;
+  text-decoration: none; }
+  .btn:hover {
+    background: #117964; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button, input {
+  line-height: normal; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font: 100%/1.5; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+  background: #FFF; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  border: 0;
+  background: #f2f2f2;
+  height: 2px;
+  margin: 17px 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.global ul, .global ol {
+  margin-left: 17px;
+  margin-bottom: 34px; }
+
+a {
+  color: #666666; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+  line-height: 1.1;
+  font-weight: 600; }
+
+h2 {
+  font-size: 38px;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 600; }
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600; }
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600; }
+
+h5 {
+  font-size: 10px;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 8px;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+p {
+  margin: 0 0 34px;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased; }
+  p a {
+    color: #666666;
+    text-decoration: none;
+    border-bottom: 1px solid #d9d9d9; }
+    p a:hover {
+      color: #1BBC9B;
+      border-color: #1BBC9B; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+code, pre {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+blockquote {
+  font-style: italic;
+  border-left: 1px solid black;
+  padding-left: 34px; }
+  blockquote:before {
+    content: "\201C";
+    display: inline-block;
+    padding-right: 0.4em; }
+
+.input, input, textarea, select {
+  background: #f7f7f7;
+  padding: 0.5rem;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  color: #666666; }
+  .input:focus, input:focus, textarea:focus, select:focus {
+    background: #f2f2f2; }
+
+.input--header {
+  margin-top: 8px; }
+
+.header {
+  padding: 34px 0; }
+
+.header__logo {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #666666;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .3s;
+  margin-right: 1.3rem; }
+  .header__logo:hover {
+    color: #1BBC9B; }
+
+.menu {
+  display: inline-block;
+  vertical-align: middle; }
+  .menu li {
+    display: inline-block;
+    vertical-align: middle; }
+    .menu li a {
+      margin-right: 1.3rem;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 9px;
+      display: block;
+      color: #4d4d4d;
+      transition: .3s;
+      border-bottom: 1px solid transparent; }
+      .menu li a:hover {
+        color: #666666;
+        border-color: #666666; }
+
+.container {
+  margin: 0 auto;
+  padding: 34px 0; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.container--xs {
+  max-width: 500px;
+  width: 90%; }
+
+.container--sm {
+  max-width: 750px;
+  width: 90%; }
+
+.container--md {
+  max-width: 900px;
+  width: 90%; }
+
+.container--lg {
+  max-width: 1150px;
+  width: 90%; }
+
+.container--xl {
+  max-width: 1300px;
+  width: 90%; }
+
+.blog-snippet {
+  margin-bottom: 44.2px;
+  width: 96%; }
+  .blog-snippet a {
+    color: #666666;
+    transition: .3s; }
+    .blog-snippet a:hover {
+      color: #1BBC9B; }
+
+.blog-snippet__title {
+  margin-top: 0px;
+  margin-bottom: 0;
+  line-height: 1.4; }
+  .blog-snippet__title a {
+    text-decoration: none;
+    color: #666666;
+    transition: .3s; }
+    .blog-snippet__title a:hover {
+      color: #1BBC9B; }
+
+.blog-snippet__date {
+  display: block;
+  margin-bottom: 10px;
+  font-style: italic; }
+
+.sidebar {
+  background: #fafafa;
+  padding: 1rem; }
+
+.frame {
+  margin: 0 auto;
+  max-width: 100%; }
+  .frame:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class*='bit-'] {
+  float: left;
+  padding: 0.3em; }
+
+.bit-1 {
+  width: 100%; }
+
+.bit-2 {
+  width: 50%; }
+
+.bit-3 {
+  width: 33.33333%; }
+
+.bit-4 {
+  width: 25%; }
+
+.bit-5 {
+  width: 20%; }
+
+.bit-6 {
+  width: 16.66667%; }
+
+.bit-7 {
+  width: 14.28571%; }
+
+.bit-8 {
+  width: 12.5%; }
+
+.bit-9 {
+  width: 11.11111%; }
+
+.bit-10 {
+  width: 10%; }
+
+.bit-11 {
+  width: 9.09091%; }
+
+.bit-12 {
+  width: 8.33333%; }
+
+.bit-25 {
+  width: 25%; }
+
+.bit-40 {
+  width: 40%; }
+
+.bit-60 {
+  width: 60%; }
+
+.bit-75 {
+  width: 75%; }
+
+@media (max-width: 30em) {
+  .bit-1 {
+    width: 100%; }
+  .bit-2 {
+    width: 100%; }
+  .bit-3 {
+    width: 100%; }
+  .bit-4 {
+    width: 100%; }
+  .bit-5 {
+    width: 100%; }
+  .bit-6 {
+    width: 100%; }
+  .bit-7 {
+    width: 100%; }
+  .bit-8 {
+    width: 100%; }
+  .bit-9 {
+    width: 100%; }
+  .bit-10 {
+    width: 100%; }
+  .bit-11 {
+    width: 100%; }
+  .bit-12 {
+    width: 100%; } }
+
+@media (min-width: 30em) and (max-width: 50em) {
+  .bit-4, .bit-6, .bit-8, .bit-10, .bit-12 {
+    width: 50%; }
+  .bit-1, .bit-2, .bit-3, .bit-5, .bit-7, .bit-9, .bit-11 {
+    width: 100%; } }
+
+@media (min-width: 50em) and (max-width: 68.75em) {
+  .bit-2, .bit-7 {
+    width: 100%; }
+  .bit-4, .bit-8, .bit-10, .bit-12 {
+    width: 50%; } }
+
+.pagination a {
+  background: #FFF;
+  color: #666666;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: .3s;
+  float: left;
+  margin-right: 10px; }
+  .pagination a:hover {
+    color: #1BBC9B;
+    border-color: #1BBC9B; }
+
+/*
+*  $HELPERS
+*  A utility class for things like text-alignment, floats, etc
+*  that we are proactively !important with
+*/
+/**
+*  Text alignment
+*/
+.text--center {
+  text-align: center !important; }
+
+.text--left {
+  text-align: left !important; }
+
+.text--right {
+  text-align: right !important; }
+
+.label-large {
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 2; }
+
+.label-small {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 2; }
+
+/**
+*  Floats
+*/
+.float--right {
+  float: right !important; }
+
+.float--left {
+  float: left !important; }
+
+.cp {
+  cursor: pointer; }
+
+.table-wrapper {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.db {
+  display: block !important; }
+
+.float--center {
+  width: auto !important;
+  display: table !important;
+  margin-right: auto !important;
+  margin-left: auto !important; }
+
+.ib {
+  display: inline-block !important; }
+
+/**
+* Element clear floats
+* .cf is available as the standard micro clearfix
+*/
+.clear {
+  clear: both !important; }
+
+.cfl {
+  clear: left !important; }
+
+.cfr {
+  clear: right !important; }
+
+/**
+* Text formatting
+*/
+.caps {
+  text-transform: uppercase !important; }
+
+.bold {
+  font-weight: bold !important; }
+
+.v-align-middle {
+  display: inline-block !important;
+  vertical-align: middle !important; }
+
+.fr {
+  float: right !important; }
+
+/**
+* Margin and padding helper classes
+* `.(m|p)(t|r|b|l|h|v)(-|+|0) {}`
+* margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+*/
+.m {
+  margin: 17px !important; }
+
+.m0 {
+  margin: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mt {
+  margin-top: 17px !important; }
+
+.mt\+ {
+  margin-top: 34px !important; }
+
+.mb {
+  margin-bottom: 17px !important; }
+
+.mb\+ {
+  margin-bottom: 34px !important; }
+
+.mb- {
+  margin-bottom: 8.5px !important; }
+
+.ml- {
+  margin-left: 8.5px !important; }
+
+.p {
+  padding: 34px !important; }
+
+.p- {
+  padding: 17px !important; }
+
+.p0 {
+  padding: 0 !important; }
+
+.pl+ {
+  padding-left: 34px; }
+
+.pr+ {
+  padding-right: 34px; }
+
+.pr {
+  position: relative; }

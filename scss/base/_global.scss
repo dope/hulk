@@ -1,0 +1,50 @@
+// Global styles that are throughout the theme.
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+html {
+  font: 100%/1.5;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $base-color;
+  background: $color-bg;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  background: darken($color-white, 5%);
+  height: 2px;
+  margin: $half-spacing-unit 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// global hacks
+// this will be moved eventually but whilst in dev
+// lets keep it real.
+.global {
+  ul,ol {
+    margin-left: $half-spacing-unit;
+    margin-bottom: $base-spacing-unit;
+  }
+}
+
+a {
+  color: $base-color;
+}

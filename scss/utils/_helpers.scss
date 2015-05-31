@@ -1,0 +1,176 @@
+/*
+*  $HELPERS
+*  A utility class for things like text-alignment, floats, etc
+*  that we are proactively !important with
+*/
+
+/**
+*  Text alignment
+*/
+.text--center {
+  text-align: center !important;
+}
+
+.text--left {
+  text-align: left !important;
+}
+
+.text--right {
+  text-align: right !important;
+}
+
+.label-large {
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.label-small {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+/**
+*  Floats
+*/
+.float--right {
+  float: right !important;
+}
+
+.float--left {
+  float: left !important;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.db {
+  display: block !important;
+}
+
+.float--center {
+  width: auto !important;
+  display: table !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.ib {
+  display: inline-block !important;
+}
+
+/**
+* Element clear floats
+* .cf is available as the standard micro clearfix
+*/
+.clear {
+  clear: both !important;
+}
+
+.cfl {
+  clear: left !important;
+}
+.cfr {
+  clear: right !important;
+}
+
+/**
+* Text formatting
+*/
+.caps {
+  text-transform: uppercase !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+
+
+.v-align-middle { // login & basket
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+
+.fr {
+  float: right !important;
+}
+
+
+/**
+* Margin and padding helper classes
+* `.(m|p)(t|r|b|l|h|v)(-|+|0) {}`
+* margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+*/
+
+.m {
+  margin: $half-spacing-unit !important;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+// .mt
+.mt {
+  margin-top: $half-spacing-unit !important;
+}
+
+// .mt+
+.mt\+ {
+  margin-top: $base-spacing-unit !important;
+}
+
+// .mb
+.mb {
+  margin-bottom: $half-spacing-unit !important;
+}
+
+// .mb+
+.mb\+ {
+  margin-bottom: $base-spacing-unit !important;
+}
+
+// .mb-
+.mb- {
+  margin-bottom: $quarter-spacing-unit !important;
+}
+
+.ml- {
+  margin-left: $quarter-spacing-unit !important;
+}
+
+
+.p {
+  padding: $base-spacing-unit !important;
+}
+
+.p- {
+  padding: $half-spacing-unit !important;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.pl+ {
+  padding-left: $base-spacing-unit;
+}
+
+.pr+ {
+  padding-right: $base-spacing-unit;
+}
+
+.pr {
+  position: relative;
+}

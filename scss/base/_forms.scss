@@ -1,0 +1,20 @@
+// Global Forms
+.input,
+input,
+textarea,
+select {
+  background: darken($color-bg, 3%);
+  padding: $form-padding;
+  outline: none;
+  border: 0;
+  border-radius: $form-radius;
+  color: $base-color;
+
+  &:focus {
+    background: darken($color-bg, 5%);
+  }
+}
+
+.input--header {
+  margin-top: 8px;
+}

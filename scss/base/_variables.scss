@@ -1,0 +1,60 @@
+/**
+*
+* Global Configuration for Hulk
+*
+**/
+
+// Colors
+$color-black:           #000;
+$color-white:           #FFF;
+$color-accent:          #1BBC9B;
+$color-bg:              $color-white;
+
+// Base Typography
+$font-family:           'Raleway', sans-serif;
+$font-size:             16px;
+$line-height:           28px;
+$base-color:            lighten($color-black, 40%);
+
+// Headings
+$h1-font-size:          48px;
+$h2-font-size:          38px;
+$h3-font-size:          28px;
+$h4-font-size:          18px;
+$h5-font-size:          10px;
+$h6-font-size:          8px;
+
+// Buttons
+$btn-color:             $color-accent;
+$btn-font:              $font-family;
+$btn-font-size:         $font-size;
+$btn-font-color:        $color-white;
+$btn-radius:            3px;
+
+// Lists
+$list-font-size:        $font-size + 2px;
+
+// Tables
+$table-background:      darken($color-white, 5%);
+$table-padding:         0.5rem;
+
+// Forms
+$form-background:       $color-white;
+$form-padding:          0.5rem;
+$form-border-color:     $base-color;
+$form-font:             $font-family;
+$form-font-size:        $font-size;
+$form-radius:           3px;
+
+// Containers
+$container-xs-width:    500px;
+$container-sm-width:    750px;
+$container-md-width:    900px;
+$container-lg-width:    1150px;
+$container-xl-width:    1300px;
+
+// Spacings
+$base-spacing-unit:     34px;
+$double-spacing-unit:   $base-spacing-unit * 2;
+$half-spacing-unit:     $base-spacing-unit / 2;
+$quarter-spacing-unit:  $base-spacing-unit / 4;

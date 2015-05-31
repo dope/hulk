@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  padding: $base-spacing-unit 0;
+  @include clearfix();
+}
+
+.container--xs { max-width: $container-xs-width; width: 90%; }
+.container--sm { max-width: $container-sm-width; width: 90%; }
+.container--md { max-width: $container-md-width; width: 90%; }
+.container--lg { max-width: $container-lg-width; width: 90%; }
+.container--xl { max-width: $container-xl-width; width: 90%; }
